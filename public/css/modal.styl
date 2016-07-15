@@ -1,0 +1,189 @@
+.reveal-modal-bg {
+    background: #000;
+    background: rgba(0, 0, 0, .45);
+    bottom: 0;
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1004;
+    left: 0
+}
+
+.reveal-modal {
+    border-radius: 3px;
+    display: none;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1005;
+    left: 0;
+    background-color: #e2007a;
+    padding: 3.75rem 0;
+    border: 1px solid #666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+}
+
+@media only screen and (min-width:22.5625rem) and (max-width:40rem) {
+    .reveal-modal {
+        min-height: 100vh
+    }
+}
+
+.reveal-modal .column,
+.reveal-modal .columns {
+    min-width: 0
+}
+
+.reveal-modal>:first-child {
+    margin-top: 0
+}
+
+.reveal-modal>:last-child {
+    margin-bottom: 0
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0;
+        width: 80%;
+        top: 6.25rem
+    }
+}
+
+.reveal-modal.collapse {
+    padding: 0;
+    box-shadow: none
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.tiny {
+        width: 30%
+    }
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.small,
+    .reveal-modal.tiny {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0
+    }
+    .reveal-modal.small {
+        width: 40%
+    }
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.medium {
+        width: 60%
+    }
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.large,
+    .reveal-modal.medium {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0
+    }
+    .reveal-modal.large {
+        width: 70%
+    }
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.xlarge {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0;
+        width: 95%
+    }
+}
+
+.reveal-modal.full {
+    height: 100vh;
+    height: 100%;
+    left: 0;
+    margin-left: 0!important;
+    max-width: none!important;
+    min-height: 100vh;
+    top: 0
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal.full {
+        left: 0;
+        margin: 0 auto;
+        max-width: 62.5rem;
+        right: 0;
+        width: 100%
+    }
+}
+
+.reveal-modal.toback {
+    z-index: 1003
+}
+
+.reveal-modal .h2,
+.reveal-modal .h3,
+.reveal-modal h2,
+.reveal-modal h3 {
+    color: #DBEA30!important
+}
+
+.reveal-modal p {
+    color: #fff
+}
+
+.reveal-modal .close-reveal-modal {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    top: .625rem;
+    right: 1.375rem
+}
+
+.reveal-modal {
+    outline: none
+}
+
+.reveal-modal.full {
+    top: 0!important;
+    position: fixed!important;
+    overflow-y: auto
+}
+
+@media only screen and (min-width:40.0625rem) {
+    .reveal-modal header {
+        padding-top: 1.5rem
+    }
+}
+
+@media only screen and (min-width:64.0625rem) {
+    .reveal-modal header {
+        padding-top: 3rem
+    }
+}
+
+@media only screen and (min-width:90.0625rem) {
+    .reveal-modal header {
+        padding-top: 4.5rem
+    }
+}
+
+.reveal-modal--open {
+    -webkit-overflow-scrolling: auto!important;
+    overflow-y: auto;
+    position: fixed
+}
